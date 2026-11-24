@@ -27,8 +27,9 @@ export function Nav() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-5 md:h-20 md:px-10">
-        <a href="#discover" onClick={(e) => (e.preventDefault(), scrollToStory(0))} className="font-wide text-sm tracking-[0.35em]">
-          VANTAGE<span className="text-electric"> MOTORS</span>
+        <a href="#discover" onClick={(e) => (e.preventDefault(), scrollToStory(0))} className="flex items-center gap-2.5 font-wide text-sm tracking-[0.35em]">
+          <img src="/favicon.png" alt="Vantage Motors logo" className="h-7 w-7 rounded-md object-cover shrink-0" />
+          <span>VANTAGE<span className="text-electric"> MOTORS</span></span>
         </a>
         <nav className="hidden items-center gap-9 lg:flex">
           {LINKS.map((l) => (
